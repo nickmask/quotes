@@ -1,14 +1,14 @@
 body {
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
-   background-image: url("/img/duke.jpg");
+   background-image: url("/quotes/img/duke.jpg");
   	background-position: top;
   	background-size: auto;
 
 }
 
 #speech {
-	background-image: url("/img/speech.png");
+	background-image: url("/quotes/img/speech.png");
 	background-repeat: no-repeat;
 	background-size:100%;
 	width: 40%;
