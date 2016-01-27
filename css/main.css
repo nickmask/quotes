@@ -33,7 +33,7 @@ body {
 }*/
 
 #dukeBut {
-	background: url("/img/quote.png") no-repeat center;
+	background: url("/quote/img/quote.png") no-repeat center;
 	background-size: contain;
 	height: 200px;
 	bottom: 0;
