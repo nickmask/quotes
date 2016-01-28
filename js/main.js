@@ -39,7 +39,39 @@ function genQuote() {
 	index = Math.round((Math.random() * (max - min) + min));
 	quote = quoteText.dukeQuotes[index].quote;
 	audio = new Audio(quoteText.dukeQuotes[index].sound);
-	audio.play();
 	$("#insertQuote").html(quote);
+	runAudio(audio);
+	generateTweet(quote);
+
 };
 
+function runAudio(audio) {
+	audio.play();
+}
+
+
+function generateTweet(quote) {
+	$("#tweet").empty();
+	twttr.widgets.createShareButton(
+  'https://dev.twitter.com/',
+  document.getElementById('tweet'),
+  {
+    text: quote
+  }
+)
+};
+
+
+
+// function generateTwitterButton(quote) {
+//  $("#tweet").empty();
+//   twttr.widgets.createShareButton(
+//   ' ',
+//   document.getElementById('tweet'),
+//   {
+//     text: returnQuoteBody(quote) + ' - ' +
+//     returnQuoteAuthor(quote),
+//     url : ""
+//   }
+// );
+// }
