@@ -29,7 +29,7 @@ var quoteText = {
 	}]
 };
 var min = 0;
-var max = 8;
+var max = 10;
 
 var quote;
 var audio;
